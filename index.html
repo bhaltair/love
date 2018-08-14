@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>文文最美么么哒~</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <!-- normal -->
+    <div id="typer"></div>
+    <div id="board" class="board" style="display: none;">
+      <div id="showArea">
+        <div id="heartMain" class="heart heart-main" style="display: none"></div>
+        <div id="timer" style="display: none">
+          <span id="count"></span>
+          <span>days</span>
+        </div>
+        <div class="foot" style="display: none">
+          <i class="wx"></i>
+          <p class="main">我想你了</p>
+          <button id="send">发送</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of normal -->
+
+    
+    <!-- birthday -->
+    <div id="birthday" style="display: none">
+      <audio id="audio" controls="controls">
+        Your browser does not support the audio tag.
+      </audio>
+      <p id="hb">Happy Birthday!</p>
+      <span id="voice_time" class="voice-time" style="display: none;"></span>
+      <div id="voice" class="comment bottom-msg" style="display: none;"></div>
+      <div id="voice_white" class="comment bottom-msg"></div>
+      <!-- cake  -->
+      <div class="cake-screen">
+        <div class="velas">
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+          <div class="fuego"></div>
+        </div>
+        <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+          <path fill="#a88679" id="bizcocho_3Path">
+            <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.3s" fill="freeze"/>
+          </path>
+          <path id="relleno_2Path" fill="#8b6a60">
+            <animate id="relleno_2" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 0.58 1" begin="bizcocho_2.end" dur="0.5s" fill="freeze" />
+          </path>
+          <path fill="#a88679" id="bizcocho_2Path">
+            <animate id="bizcocho_2" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0.25 0 0.58 1" begin="relleno_1.end" dur="0.5s" fill="freeze" />
+          </path>
+          <path id="relleno_1Path" fill="#8b6a60">
+            <animate id="relleno_1" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 0.6 1" begin="bizcocho_1.end" dur="0.5s" fill="freeze" />
+          </path>
+          <path fill="#a88679" id="bizcocho_1Path">
+            <animate id="bizcocho_1" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0.25 0 1 1; 0 0 1 1; 0.25 0 0.6 1" begin="2s" dur="0.8s" fill="freeze" />
+          </path>
+          <path id="cremaPath" fill="#fefae9">
+            <animate id="crema" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0.25 0 1 1; 0 0 1 1; 0 0 0.58 1" begin="bizcocho_3.end" dur="2s" fill="freeze"/>
+          </path>
+          <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
+        </svg>
+      </div>
+    </div>
+    <!-- end of birthday -->
+  <script type="text/javascript" src="./public/js/main.js"></script></body>
+</html>
