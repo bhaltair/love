@@ -5,7 +5,7 @@ if (!years) {
   require.ensure([], function (require) {
     const love = require('./js/normal/go.js')
     window.onload = () => {
-      love.go()
+      love.love()
     }
   }, 'normal')
 } else {

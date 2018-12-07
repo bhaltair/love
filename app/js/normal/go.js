@@ -58,7 +58,7 @@ function go () {
     .type('boy', '<span class="gray">')
     .type(':', '<span class="blue">')
     .type('0', '<span class="blank">')
-    .type("'wood'", '<span class="green">')
+    .type("''", '<span class="green">')
     .wait(15)
     .del(6)
     .type("'王其'", '<span class="green">')
@@ -279,6 +279,13 @@ function stars () {
     els[0].remove()
   }
 }
+
+const love = () => {
+  transBoard('show', () => {
+    foreverLove()
+  })
+}
 export {
-  go
+  go,
+  love
 }
