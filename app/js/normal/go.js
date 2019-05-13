@@ -1,10 +1,11 @@
 import typish from './typewriter.js'
 import CountUp from 'countup.js'
+import { time, boy, girl } from '../../config.js'
 require('@css/normal/code.css')
 require('@css/normal/cursor.css')
 require('@css/normal/normal.css')
 // 配置在一起的日子
-const startTime = '2018/04/20'
+const startTime = time
 // preload
 document.getElementById('birthday').remove()
 let s1 = require('@img/i-miss-u.png')
@@ -19,7 +20,7 @@ function go () {
     .type('/**', '<span class="note">')
     .type('0', '<br>')
     .type('00', '<span class="blank">')
-    .type('今天炸药包教你写代码呀', '<span class="note">')
+    .type(`今天${boy}教你写代码呀`, '<span class="note">')
     .type('0', '<br>')
     .type('00', '<span class="blank">')
     .wait(10)
@@ -58,10 +59,10 @@ function go () {
     .type('boy', '<span class="gray">')
     .type(':', '<span class="blue">')
     .type('0', '<span class="blank">')
-    .type("''", '<span class="green">')
-    .wait(15)
-    .del(6)
-    .type("'王其'", '<span class="green">')
+    // .type("''", '<span class="green">')
+    // .wait(15)
+    // .del(6)
+    .type(`${boy}`, '<span class="green">')
     .type(',', '<span class="gray">')
     .type('0', '<br>')
     // 珊珊
@@ -69,7 +70,7 @@ function go () {
     .type('girl', '<span class="gray">')
     .type(':', '<span class="blue">')
     .type('0', '<span class="blank">')
-    .type("'王文文'", '<span class="green">')
+    .type(`${girl}`, '<span class="green">')
     .type(',', '<span class="gray">')
     .type('0', '<br>')
     // time
@@ -280,6 +281,7 @@ function stars () {
   }
 }
 
+// 快速切换到相恋多少天
 const love = () => {
   transBoard('show', () => {
     foreverLove()

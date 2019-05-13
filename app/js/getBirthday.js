@@ -1,11 +1,13 @@
 // 生日2017/12/20（要改成农历..）
+import { birthday } from '../config.js'
+const [y1, m1, d1] = birthday.split('/')
 export function compute () {
   let date = new Date()
   let y = date.getFullYear()
-  let m = date.getMonth()
+  let m = date.getMonth() + 1
   let d = date.getDate()
-  if (y === 2017 && m === 11 && d === 20) {
-    return 23
+  if (+m === +m1 && +d === +d1) {
+    return y - y1
   }
   return false
 }
